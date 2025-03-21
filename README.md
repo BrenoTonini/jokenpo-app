@@ -40,5 +40,16 @@ flutter run
 - Selecione entre "Pedra", "Papel" e "Tesoura".
 - Se divirta!
 
-## Licença
-Este projeto está sob a MIT License - sinta-se livre para usá-lo e modificá-lo.
+## Observações
+
+- Este projeto é um exercício acadêmico de aplicativos mobile focado na introdução dos elementos básicos do Flutter, que são fundamentais para o desenvolvimento de interfaces de usuário eficientes e responsivas.
+- Uso do componente **Image** e **GestureDetector** para criar uma interação entre o usuário e o aplicativo.
+- **Row**, **Column**, **StatefulWidge**t e **StatelessWidget**
+
+## Contribuição
+
+Projeto acadêmico não aberto para contribuições externas. No entanto, sinta-se à vontade para clonar o repositório e realizar modificações para aprendizado pessoal.
+
+---
+
+Desenvolvido como parte da disciplina **Aplicativos Mobile - Faculdade UCL**.
