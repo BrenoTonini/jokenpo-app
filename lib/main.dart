@@ -1,8 +1,12 @@
+
 import 'package:flutter/material.dart';
+
 
 void main() {
   runApp(const MyApp());
+  
 }
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -10,6 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false, //tirando aquela marca do debug lá
       title: 'Pedra, Papel e Tesoura',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 25, 0, 255)),
@@ -54,6 +59,8 @@ class _GameScreenState extends State<GameScreen> {
     });
   }
 
+
+
   void resetGame() {
     setState(() {
       playerWins = 0;
@@ -85,6 +92,8 @@ class _GameScreenState extends State<GameScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
+
+
 
             // Disputa
             Container(
@@ -131,6 +140,8 @@ class _GameScreenState extends State<GameScreen> {
               ), 
             ),
             
+
+
             // Placar
             Container(
               child: Column(
@@ -209,6 +220,9 @@ class _GameScreenState extends State<GameScreen> {
                 ],
               ),
             ),
+
+
+
             
             // Opções
             Container(
