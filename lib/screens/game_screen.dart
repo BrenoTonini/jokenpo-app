@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../models/game_logic.dart';
 import '../widgets/score_board.dart';
 import '../widgets/game_options.dart';
+import '../widgets/game_result.dart'; // Importando o novo widget
 
 class GameScreen extends StatefulWidget {
   const GameScreen({super.key});
@@ -35,6 +36,7 @@ class _GameScreenState extends State<GameScreen> {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
+            GameResult(gameLogic: _gameLogic), 
             ScoreBoard(gameLogic: _gameLogic),
             GameOptions(onPlay: _play),
           ],
